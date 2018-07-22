@@ -326,6 +326,46 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
+#features {
+  background: #f9f9f5;
+  text-align: center;
+  position: relative;
+  height: 500px; }
+  #features:after {
+    bottom: 0;
+    position: absolute;
+    background: inherit;
+    content: " ";
+    height: 100%;
+    left: 0;
+    right: 0;
+    transform: skewY(-10deg);
+    transform-origin: 100%;
+    z-index: -1; }
+  #features h2 {
+    margin: 80px 0; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 30px; }
+
+.feature-card {
+  background: white;
+  padding: 30px 20px 18px;
+  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
+  .feature-card h3 {
+    margin: 10px 0 0; }
+
+.car {
+  border-top: 1px solid #30E2C0; }
+
+.shoe {
+  border-top: 1px solid #510EED; }
+
+.device {
+  border-top: 1px solid #01AEFF; }
+
 .flex-video {
   height: 0;
   margin-bottom: 0.88889rem;
@@ -384,6 +424,20 @@ hr {
 
 a.download {
   background: white;
-  color: #00adff;
+  color: #01AEFF;
   box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
   margin-left: 25px; }
+
+#brands ul {
+  margin: 0;
+  padding: 20px 0;
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(6, auto); }
+  @media only screen and (max-width: 550px) {
+    #brands ul {
+      grid-template-columns: repeat(3, auto); } }
+  #brands ul li {
+    list-style: none; }
+  #brands ul li img {
+    width: 100%; }
